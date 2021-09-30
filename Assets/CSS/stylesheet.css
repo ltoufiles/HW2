@@ -1,0 +1,359 @@
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+  }
+  
+/*MENU*/
+  .p {
+    margin: 0px;
+  }
+
+  .paragraph {
+    border-bottom: 2px;
+    padding-top: 0px;
+    font-size: 18px;
+    right: 30px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(52, 100, 133);
+    font-weight: bold;
+  }
+
+  h1 {
+    color: rgb(255, 255, 255);
+    background-color:  rgb(52, 100, 133);
+    padding: 10px;
+    font-size: 25px;
+    box-sizing: border-box;
+    grid-area: 20px;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  nav {
+    padding-top: 30px;
+    margin-right: 0px;
+    padding-left: 75px;
+  }
+  
+  nav a {
+    color:rgb(143, 147, 158);
+  }
+
+  nav a:hover {
+    color: rgb(52, 100, 133);
+  }
+
+  nav li {
+    padding: 25px;
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    align-items: right;
+  }
+  
+  ol, ul {
+    font-size: 40px;
+    display: flex;
+    list-style: none;
+  }
+  
+  li {
+    padding-left: 50px;
+    color:white;
+  }
+
+  /*END OF MENU*/
+
+  /*GRID*/
+
+  .grid-header,
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+   
+  .grid1 {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-right: 5px rgba(143, 143, 143, 0.8);
+    border-right-style: solid;
+    border-bottom: 2px;
+    padding-right: 20PX;
+    font-size: 50px;
+    text-align: right;
+    box-sizing: border-box;
+    margin: 10px;
+    grid-area: 20px;
+  }
+
+  .grid2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-style: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+  }
+
+  .grid3 {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .display {
+    padding-left: 15px;
+    padding-right: 15px
+  }
+
+  .display2,
+  .display3 {
+    display: flex;
+  }
+
+  .display2 {
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3px;
+    padding-top: 5px;
+  }
+
+  .display3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    padding-top: 5px;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+    border-color: rgb(52, 100, 133);
+    border-style: solid;
+    border-width: 5px;
+  }
+
+  .item1 {
+    background-image: url("../Images/architecture.jpg");
+    height: 45vh;
+    margin-top: 10px;
+  }
+  
+  .item2 {
+    background-image: url("../Images/street.jpg");
+    height: 30vh;
+  }
+
+  .item3 {
+    background-image: url("../Images/bicycle.jpg");
+    height: 30vh;
+  }
+
+  .item4 {
+    background-image: url("../Images/art.jpg");
+    height: 20vh;
+  }
+
+  .item5 {
+    background-image: url("../Images/wall.jpg");
+    height: 20vh;
+  }
+
+  .item6 {
+    background-image: url("../Images/bear.jpg");
+    height: 20vh;
+  }
+
+  div .item1:hover:hover,
+  div .item2:hover:hover 
+  div .item3:hover:hover 
+  div .item4:hover:hover 
+  div .item5:hover:hover 
+  div .item6:hover:hover {
+    opacity: 50%;
+  }
+
+  /*END OF GRID*/
+  
+  .Welcome {
+    display: block;
+    direction: row;
+    width: 100%;
+    background-image: url("../Images/brickwall.jpg");
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .text {
+    position: absolute;
+    font-size: 30px;
+    left: 75%;
+    top: auto;
+    bottom: auto;
+    color:rgb(255, 255, 255);
+    background-color: rgb(52, 100, 133);
+    font-weight: bold;
+  }
+
+/*responsive layout*/
+
+  @media screen and (max-width: 1000px) {
+    .welcome {
+      display: block;
+      width: auto;
+      height: auto;
+    }
+
+    .text {
+      position: relative;
+      height: auto;
+      margin: auto;
+      left: auto;
+      font-size: 30px;
+      color:rgb(255, 255, 255);
+      background-color: rgb(52, 100, 133);
+      font-weight: bold;
+    }
+
+    .paragraph {
+      background-color: rgb(52, 100, 133);
+      display: block;
+      width: 100%;
+      border-bottom: 2px;
+      padding: 0px;
+      font-size: 18px;
+      box-sizing: border-box;
+      margin: 0px;
+      grid-area: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white; 
+      background-color:  rgb(52, 100, 133);
+      left: 30px;
+      font-size: 40px;
+      margin-top: 0px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    nav {
+      text-align: center;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .grid-container,
+    .grid2,
+    .display2,
+    .display3 {
+      display: block;
+      width: 100%;
+    }
+
+    .grid1 {
+      background-color: rgba(143, 143, 143, 0.8);
+      border-bottom: 5px rgba(255, 255, 255, 0.8);
+      color:rgb(52, 100, 133);
+      border-bottom-style: solid;  
+      text-align: center;
+      height: auto;
+    }
+
+    .grid2 {
+      height: auto;
+    }
+     
+    .display3 {
+      gap: 5px;
+      padding-top: 5px;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6 {
+      border-width: 2px;
+      border-style: solid;
+      border-color: rgb(52, 100, 133);
+      padding: 5px;
+      height: auto;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .paragraph {
+      border-bottom: 2px;
+      padding-top: 0px;
+      font-size: 18px;
+      right: 30px;
+      color:rgb(255, 255, 255);
+      background-color: rgb(52, 100, 133);
+      font-weight: bold;
+      position: relative;
+      transform-origin: (-50%,50%);
+    }
+
+    .item1 {
+      background-image: url("../Images/architecture.jpg");
+      margin-top: 10px;
+    }
+
+    .item2 {
+      background-image: url("../Images/street.jpg");
+    }
+
+    .item3 {
+      background-image: url("../Assets/Images/blackmagic.jpg");
+    }
+
+    .item4 {
+      background-image: url("../Assets/Images/art.jpg");
+    }  
+
+    .item5 {
+      background-image: url("../Assets/Images/wall.jpg"); 
+    }
+
+    .item6 {
+     background-image: url("../Images/bear.jpg");
+    }
+
+    ul {
+      font-size: 20px;
+      display: block;
+      width: 100%;
+    }
+
+   user-select:Hover {
+      opacity: 50%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .text {
+      position: relative;
+      font-size: 20px;
+      color:rgb(255, 255, 255);
+      background-color: rgb(52, 100, 133);
+      font-weight: bold;
+      }
+  }
